@@ -63,7 +63,30 @@ mapping = {
 	'actions/XXX/xfsm-lock': 'actions/XXX/lock',
 	'status/XXX/notification-disabled-symbolic': 'status/XXX/dialog-error',
 	'status/XXX/notification-symbolic': 'status/XXX/dialog-information',
-	'status/XXX/org.xfce.notification.unread-emblem-symbolic': 'status/XXX/dialog-warning'
+	'status/XXX/org.xfce.notification.unread-emblem-symbolic': 'status/XXX/dialog-warning',
+	'status/XXX/battery-level-0-symbolic.symbolic': 'status/XXX/gpm-primary-000',
+	'status/XXX/battery-level-0-charging-symbolic.symbolic': 'status/XXX/gpm-primary-000-charging',
+	'status/XXX/battery-level-10-symbolic.symbolic': 'status/XXX/gpm-primary-020',
+	'status/XXX/battery-level-10-charging-symbolic.symbolic': 'status/XXX/gpm-primary-020-charging',
+	'status/XXX/battery-level-20-symbolic.symbolic': 'status/XXX/gpm-primary-020',
+	'status/XXX/battery-level-20-charging-symbolic.symbolic': 'status/XXX/gpm-primary-020-charging',
+	'status/XXX/battery-level-30-symbolic.symbolic': 'status/XXX/gpm-primary-040',
+	'status/XXX/battery-level-30-charging-symbolic.symbolic': 'status/XXX/gpm-primary-040-charging',
+	'status/XXX/battery-level-40-symbolic.symbolic': 'status/XXX/gpm-primary-040',
+	'status/XXX/battery-level-40-charging-symbolic.symbolic': 'status/XXX/gpm-primary-040-charging',
+	'status/XXX/battery-level-50-symbolic.symbolic': 'status/XXX/gpm-primary-060',
+	'status/XXX/battery-level-50-charging-symbolic.symbolic': 'status/XXX/gpm-primary-060-charging',
+	'status/XXX/battery-level-60-symbolic.symbolic': 'status/XXX/gpm-primary-060',
+	'status/XXX/battery-level-60-charging-symbolic.symbolic': 'status/XXX/gpm-primary-060-charging',
+	'status/XXX/battery-level-70-symbolic.symbolic': 'status/XXX/gpm-primary-080',
+	'status/XXX/battery-level-70-charging-symbolic.symbolic': 'status/XXX/gpm-primary-080-charging',
+	'status/XXX/battery-level-80-symbolic.symbolic': 'status/XXX/gpm-primary-080',
+	'status/XXX/battery-level-80-charging-symbolic.symbolic': 'status/XXX/gpm-primary-080-charging',
+	'status/XXX/battery-level-90-symbolic.symbolic': 'status/XXX/gpm-primary-100',
+	'status/XXX/battery-level-90-charging-symbolic.symbolic': 'status/XXX/gpm-primary-100-charging',
+	'status/XXX/battery-level-100-symbolic.symbolic': 'status/XXX/gpm-primary-100',
+	'status/XXX/battery-level-100-charged-symbolic.symbolic': 'status/XXX/gpm-primary-charged',
+	'devices/XXX/battery-symbolic.symbolic': 'devices/XXX/battery'
 }
 
 if __name__ == "__main__":
