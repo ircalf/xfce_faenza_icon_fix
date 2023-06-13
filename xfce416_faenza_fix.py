@@ -13,7 +13,7 @@ mapping_symb = {
 	'mimetypes/XXX/audio-x-generic-symbolic',
 	'places/XXX/start-here-debian-symbolic',
 	'places/XXX/start-here-gnome-symbolic',
-	'places/XXX/folder-symbolic',
+	'places/XXX/folder-symbolic',r
 	'places/XXX/start-here-opensuse-symbolic',
 	'places/XXX/start-here-ubuntu-symbolic',
 	'places/XXX/user-trash-symbolic',
@@ -266,6 +266,12 @@ mapping = {
 }
 
 if __name__ == "__main__":
+	cmd = "find " + icon_root + "/Faenza-Dark -iname \"*-symbolic.svg\" -type l"
+	if not dry_run:
+		cmd = cmd + " -delete"
+	else:
+		cmd = cmd + " -printf \"delete: %p\n\""
+	subprocess.run(cmd, shell=True)
 	for symb in mapping_symb:
 		for theme in icon_folders:
 			reference_icon = icon_root + "/" + theme + "/" + symb.replace("XXX", "scalable") + ".svg"
@@ -298,3 +304,9 @@ if __name__ == "__main__":
 						print(cmd)
 					else:
 						subprocess.run(cmd, shell=True)
+	for theme in icon_folders:
+		cmd = "gtk-update-icon-cache -f " + icon_root + "/" + theme
+		if dry_run:
+			print(cmd)
+		else:
+			subprocess.run(cmd, shell=True)
